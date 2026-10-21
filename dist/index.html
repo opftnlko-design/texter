@@ -19,10 +19,25 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Texter" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <script type="module" crossorigin src="/assets/index-Cr2OmB_x.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-VvVfqcuY.css">
+    <script type="module" crossorigin src="/assets/index-ZD-6AvUx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-jhLxzrt2.css">
   </head>
   <body>
     <div id="root"></div>
+    <!-- Old-browser safeguard: inline script runs on engines that can't load the module -->
+    <script>
+      setTimeout(function () {
+        var root = document.getElementById('root');
+        if (root && !root.hasChildNodes()) {
+          document.body.innerHTML =
+            '<div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#FAF7F2;color:#1c1917;text-align:center;padding:24px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">' +
+            '<div style="width:56px;height:56px;border-radius:16px;background:#EA580C;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;margin-bottom:16px">T</div>' +
+            '<h1 style="font-size:18px;font-weight:800;margin:0 0 8px">Your browser is too old for Texter</h1>' +
+            '<p style="font-size:13px;color:#78716c;max-width:300px;margin:0 0 16px">Please update your browser or try Chrome or Firefox to use this messaging app.</p>' +
+            '<button onclick="window.location.reload()" style="padding:10px 28px;border-radius:999px;background:#EA580C;color:#fff;border:none;font-weight:700;font-size:13px;cursor:pointer">Try Again</button>' +
+            '</div>';
+        }
+      }, 4000);
+    </script>
   </body>
 </html>
