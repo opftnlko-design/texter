@@ -1,4 +1,4 @@
-const CACHE_NAME = 'texter-v1';
+const CACHE_NAME = 'texter-v2';
 const OFFLINE_URL = '/index.html';
 
 // App shell files to precache (hashed asset names are injected at build time)
